@@ -28,7 +28,7 @@
         android:id="@+id/category_name"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:text="@string/give_tips"
+        android:text="@string/give_tip"
         android:fontFamily="@font/urbanist_semibold"
         android:textSize="12sp"
         android:layout_marginTop="4dp"

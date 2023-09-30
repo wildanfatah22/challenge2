@@ -4,9 +4,9 @@
     <string name="user">Wildan</string>
     <string name="balance">Your Balance in IDR</string>
     <string name="money">500.000</string>
-    <string name="give_tips">Give Tips</string>
+    <string name="give_tip">Give Tip</string>
     <string name="outcome">Rp250.000</string>
-    <string name="total_tips">Total tips</string>
+    <string name="total_tip">Total Tip</string>
     <string name="recently">Recently Transaction</string>
     <string name="to_user">Talitha</string>
     <string name="date">Sep 30, 2023</string>
@@ -27,4 +27,6 @@
     <string name="have_account">Already have account?</string>
     <string name="register">Register</string>
     <string name="name_full">Full Name</string>
+    <string name="hint_search">Search</string>
+    <string name="list_user">List User</string>
 </resources>
