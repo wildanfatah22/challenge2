@@ -41,4 +41,6 @@
     <string name="notification">Notification</string>
     <string name="see_all">See all</string>
     <string name="dalam_rupiah">Dalam rupiah</string>
+    <string name="tip_result">Tip: %s\nTotal Amount: %s</string>
+    <string name="total_sum">Total Amount</string>
 </resources>

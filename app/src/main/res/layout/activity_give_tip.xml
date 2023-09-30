@@ -85,14 +85,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_radio">
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/amazing"/>
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/good"/>
         <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ok"/>
@@ -121,11 +124,23 @@
                 android:fontFamily="@font/urbanist_medium"
                 android:textColor="@color/white_bg" />
             <TextView
+                android:id="@+id/result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="@string/tip_value"
+                tools:text="@string/total_tip"
+                android:textSize="32sp"
+                android:fontFamily="@font/urbanist_semibold"
+                android:textColor="@color/white_bg" />
+
+            <TextView
+                android:id="@+id/result_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                tools:text="@string/total_sum"
                 android:textSize="32sp"
                 android:fontFamily="@font/urbanist_semibold"
                 android:textColor="@color/white_bg" />
