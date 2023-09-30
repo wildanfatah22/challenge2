@@ -59,7 +59,4 @@
         android:layout_marginHorizontal="16dp"
         tools:listitem="@layout/item_contact"/>
 
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
