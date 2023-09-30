@@ -1,7 +1,9 @@
 package com.example.challenge2.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.challenge2.R
 import com.example.challenge2.adapter.CategoryAdapter
 import com.example.challenge2.adapter.TransactionAdapter
@@ -9,7 +11,7 @@ import com.example.challenge2.data.Category
 import com.example.challenge2.data.TransactionItem
 import com.example.challenge2.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), CategoryAdapter.CategoryItemClickListener {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,8 +77,30 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        val categoryAdapter = CategoryAdapter(category)
+        val categoryAdapter = CategoryAdapter(category, this)
         rvKategori.adapter = categoryAdapter
+    }
+
+    override fun onCategoryItemClicked(category: Category) {
+        when (category.id) {
+            1 -> {
+                // Tambahkan kode untuk berpindah ke activity Transfer
+                Toast.makeText(this@MainActivity, "Feature not yet available", Toast.LENGTH_LONG).show()
+            }
+            2 -> {
+                // Tambahkan kode untuk berpindah ke activity Give Tip
+                val intent = Intent(this@MainActivity, ContactActivity::class.java)
+                startActivity(intent)
+            }
+            3 -> {
+                // Tambahkan kode untuk berpindah ke activity Top Up
+                Toast.makeText(this@MainActivity, "Feature not yet available", Toast.LENGTH_LONG).show()
+            }
+            else -> {
+                // Tindakan yang akan diambil jika kategori tidak dikenali
+                Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 }

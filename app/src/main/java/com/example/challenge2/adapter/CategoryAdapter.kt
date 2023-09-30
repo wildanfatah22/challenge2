@@ -6,11 +6,25 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.challenge2.data.Category
 import com.example.challenge2.databinding.ItemCategoriesBinding
 
-class CategoryAdapter(private val list: List<Category>) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter(
+    private val list: List<Category>,
+    private val categoryItemClickListener: CategoryItemClickListener
+) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+
 
     inner class ViewHolder(private val binding: ItemCategoriesBinding) : RecyclerView.ViewHolder(binding.root) {
         val icon = binding.categoryIcon
         val name = binding.categoryName
+
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    val category = list[position]
+                    categoryItemClickListener.onCategoryItemClicked(category)
+                }
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,5 +41,9 @@ class CategoryAdapter(private val list: List<Category>) : RecyclerView.Adapter<C
 
     override fun getItemCount(): Int {
         return list.size
+    }
+
+    interface CategoryItemClickListener {
+        fun onCategoryItemClicked(category: Category)
     }
 }
