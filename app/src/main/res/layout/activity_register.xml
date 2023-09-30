@@ -48,7 +48,7 @@
             app:boxStrokeColor="@color/light_gray"
             app:startIconDrawable="@drawable/ic_person">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_inputname"
+                android:id="@+id/edt_name_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
@@ -71,7 +71,7 @@
             app:boxStrokeColor="@color/light_gray"
             app:startIconDrawable="@drawable/ic_email">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_inputemail"
+                android:id="@+id/edt_email_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
@@ -93,7 +93,7 @@
             app:boxStrokeColor="@color/light_gray"
             app:startIconDrawable="@drawable/ic_password">
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_inputpassword"
+                android:id="@+id/edt_password_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
