@@ -7,8 +7,14 @@
     <string name="give_tips">Give Tips</string>
     <string name="outcome">Rp250.000</string>
     <string name="total_tips">Total tips</string>
-    <string name="recently">Recently Tipped</string>
+    <string name="recently">Recently Transaction</string>
     <string name="to_user">Talitha</string>
     <string name="date">Sep 30, 2023</string>
     <string name="message">Thanks for the service</string>
+    <string name="tip_value">25.000</string>
+    <string name="ts_system">-</string>
+    <string name="tip">Tip</string>
+    <string name="my_card">My Card</string>
+    <string name="card_number">4873 4983 4837 1234</string>
+    <string name="full_name">Wildan Fatahillah Akbar</string>
 </resources>
