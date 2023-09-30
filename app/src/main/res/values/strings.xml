@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">challenge2</string>
+    <string name="hi">Hi,</string>
+    <string name="user">Wildan</string>
+    <string name="balance">Your Balance in IDR</string>
+    <string name="money">500.000</string>
+    <string name="give_tips">Give Tips</string>
+    <string name="outcome">Rp250.000</string>
+    <string name="total_tips">Total tips</string>
+    <string name="recently">Recently Tipped</string>
+    <string name="to_user">Talitha</string>
+    <string name="date">Sep 30, 2023</string>
+    <string name="message">Thanks for the service</string>
+</resources>
