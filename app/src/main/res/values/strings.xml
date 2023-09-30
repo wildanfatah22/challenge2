@@ -37,4 +37,7 @@
     <string name="good">Good (15%)</string>
     <string name="ok">Ok (10%)</string>
     <string name="send">Send</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="see_all">See all</string>
 </resources>

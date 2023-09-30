@@ -3,10 +3,10 @@ package com.example.challenge2.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.challenge2.data.Transaction
+import com.example.challenge2.data.TransactionItem
 import com.example.challenge2.databinding.ItemTransactionBinding
 
-class TransactionAdapter(private val list: List<Transaction>) : RecyclerView.Adapter<TransactionAdapter.ViewHolder>() {
+class TransactionAdapter(private val list: List<TransactionItem>) : RecyclerView.Adapter<TransactionAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ItemTransactionBinding) : RecyclerView.ViewHolder(binding.root) {
         val transaction = binding.tvTransaction
@@ -24,7 +24,7 @@ class TransactionAdapter(private val list: List<Transaction>) : RecyclerView.Ada
     }
     
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val user: Transaction = list[position]
+        val user: TransactionItem = list[position]
         holder.transaction.text = user.transactionName
         holder.name.text = user.userName
         holder.date.text = user.date

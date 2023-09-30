@@ -6,7 +6,7 @@ import com.example.challenge2.R
 import com.example.challenge2.adapter.CategoryAdapter
 import com.example.challenge2.adapter.TransactionAdapter
 import com.example.challenge2.data.Category
-import com.example.challenge2.data.Transaction
+import com.example.challenge2.data.TransactionItem
 import com.example.challenge2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun bindTransaction(){
         val rvTransaction = binding.rvTransaction
-        val transaction: List<Transaction> = listOf(
-            Transaction(
+        val transactionItems: List<TransactionItem> = listOf(
+            TransactionItem(
                 id = 1,
                 transactionName = "Tip",
                 userName = "John Doe",
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 transactionSystem = "-",
                 transactionValue = "Rp25.000",
             ),
-            Transaction(
+            TransactionItem(
                 id = 2,
                 transactionName = "Transfer",
                 userName = "Alice Smith",
@@ -41,8 +41,17 @@ class MainActivity : AppCompatActivity() {
                 transactionSystem = "-",
                 transactionValue = "Rp250.000",
             ),
+            TransactionItem(
+                id = 3,
+                transactionName = "Transfer",
+                userName = "Megawati",
+                date = "2023-09-17",
+                message = "Buat bayar buzzer ya",
+                transactionSystem = "+",
+                transactionValue = "Rp1.250.000",
+            ),
         )
-        val transactionAdapter = TransactionAdapter(transaction)
+        val transactionAdapter = TransactionAdapter(transactionItems)
         rvTransaction.adapter = transactionAdapter
     }
 
