@@ -30,4 +30,11 @@
     <string name="hint_search">Search</string>
     <string name="list_user">List User</string>
     <string name="description">Kebut semalam gara-gara file ilang :)</string>
+    <string name="talitha">Talitha Alda Z</string>
+    <string name="number_reg">140451402214069</string>
+    <string name="nominal">Nominal</string>
+    <string name="amazing">Amazing (20%</string>
+    <string name="good">Good (15%)</string>
+    <string name="ok">Ok (10%)</string>
+    <string name="send">Send</string>
 </resources>
