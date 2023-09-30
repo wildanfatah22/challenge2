@@ -11,9 +11,14 @@
     <color name="dark_gray">#858685</color>
 
 
-    <color name="light_black">#1D2026</color>
-    <color name="grey">#2D303A</color>
+    <color name="light_black">#212121</color>
+    <color name="grey">#E7E7E7</color>
     <color name="gold">#F8CF80</color>
+
+
+    <color name="white_bg">#FCFCFC</color>
+
+
 
 
 </resources>
