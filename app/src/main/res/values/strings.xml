@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">challenge2</string>
+    <string name="app_name">Challenge 2</string>
     <string name="hi">Hi,</string>
     <string name="user">Wildan</string>
     <string name="balance">Your Balance in IDR</string>
@@ -17,4 +17,14 @@
     <string name="my_card">My Card</string>
     <string name="card_number">4873 4983 4837 1234</string>
     <string name="full_name">Wildan Fatahillah Akbar</string>
+    <string name="login_text">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="register_hint">Register</string>
+    <string name="back_login">Kembali ke Login</string>
+    <string name="email">Email</string>
+    <string name="havent_account">Didn\'t have account?</string>
+    <string name="have_account">Already have account?</string>
+    <string name="register">Register</string>
+    <string name="name_full">Full Name</string>
 </resources>
